@@ -6,7 +6,9 @@ namespace BlazeXam.Shared
 {
     public interface IBlazeXamQuestion
     {
-        BlazeXamQTypeEnum QType {get;}
+        int Id { get; set; }
+
+        BlazeXamQTypeEnum QType { get; }
         float AvailablePoints { get; set; }
         float PointsAchieved { get; set; }
         string QuestionText { get; set; }
